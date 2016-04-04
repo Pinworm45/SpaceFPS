@@ -1,9 +1,9 @@
-﻿Log file open, 04/03/16 23:33:42
+﻿Log file open, 04/04/16 10:51:14
 LogInit:Display: Running engine for game: SpaceFPS
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-1185168317) SRandInit(-1185168315).
+LogInit:Display: RandInit(-1688041793) SRandInit(-1688041791).
 LogTaskGraph: Started task graph with 4 named threads and 7 total threads.
-LogStats: Stats thread started at 0.177356
+LogStats: Stats thread started at 0.096546
 LogHMD: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
 LogInit: Version: 4.11.0-2927265+++UE4+Release-4.11
 LogInit: API Version: 2927265
@@ -11,7 +11,7 @@ LogInit: Compiled (64-bit): Mar 30 2016 02:13:55
 LogInit: Compiled with Visual C++: 19.00.23026.00
 LogInit: Build Configuration: Development
 LogInit: Branch Name: ++UE4+Release-4.11
-LogInit: Command line:  
+LogInit: Command line: -EpicPortal 
 LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.11/Engine/Binaries/Win64/
 LogInit: Installed Engine Build: 1
 LogInit: Using libcurl 7.41.0
@@ -30,295 +30,906 @@ LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
 LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
 LogInit: Presizing for max 16777216 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2016.04.03-22.33.42:674][  0]LogInit: Selected Device Profile: [Windows]
-[2016.04.03-22.33.42:674][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2016.04.03-22.33.42:689][  0]LogInit: Computer: OWEN
-[2016.04.03-22.33.42:689][  0]LogInit: User: owen
-[2016.04.03-22.33.42:689][  0]LogInit: CPU Page size=65536, Cores=4
-[2016.04.03-22.33.42:689][  0]LogInit: High frequency timer resolution =3.923935 MHz
-[2016.04.03-22.33.42:689][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
-[2016.04.03-22.33.42:689][  0]LogMemory: Platform Memory Stats for Windows
-[2016.04.03-22.33.42:689][  0]LogMemory: Process Physical Memory: 314.48 MB used, 314.48 MB peak
-[2016.04.03-22.33.42:689][  0]LogMemory: Process Virtual Memory: 316.76 MB used, 316.76 MB peak
-[2016.04.03-22.33.42:689][  0]LogMemory: Physical Memory: 6280.05 MB used, 32750.12 MB total
-[2016.04.03-22.33.42:689][  0]LogMemory: Virtual Memory: 621.02 MB used, 8388608.00 MB total
-[2016.04.03-22.33.43:251][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
-[2016.04.03-22.33.43:776][  0]LogD3D11RHI: D3D11 adapters:
-[2016.04.03-22.33.43:789][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
-[2016.04.03-22.33.43:789][  0]LogD3D11RHI:       3051MB of dedicated video memory, 0MB of dedicated system memory, and 3840MB of shared system memory, 1 output[s]
-[2016.04.03-22.33.43:789][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2016.04.03-22.33.43:797][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2016.04.03-22.33.43:798][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
-[2016.04.03-22.33.43:798][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
-[2016.04.03-22.33.43:798][  0]LogD3D11RHI:      Driver Date: Unknown
-[2016.04.03-22.33.43:798][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
-[2016.04.03-22.33.43:810][  0]LogD3D11RHI: Async texture creation disabled: no driver support
-[2016.04.03-22.33.43:823][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Intermediate/Shaders/WorkingDirectory/1400/).
-[2016.04.03-22.33.43:823][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/owen/AppData/Local/Temp/UnrealShaderWorkingDir/ED61ABEB4154D7405C5590819B6D58CC/'.
-[2016.04.03-22.33.43:823][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
-[2016.04.03-22.33.46:512][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
-[2016.04.03-22.33.46:550][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
-[2016.04.03-22.33.46:588][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
-[2016.04.03-22.33.46:628][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
-[2016.04.03-22.33.46:668][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
-[2016.04.03-22.33.46:706][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
-[2016.04.03-22.33.46:745][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
-[2016.04.03-22.33.46:784][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
-[2016.04.03-22.33.46:823][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
-[2016.04.03-22.33.46:862][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
-[2016.04.03-22.33.46:901][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
-[2016.04.03-22.33.46:978][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
-[2016.04.03-22.33.46:979][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
-[2016.04.03-22.33.47:013][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
-[2016.04.03-22.33.47:136][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
-[2016.04.03-22.33.47:170][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
-[2016.04.03-22.33.47:208][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
-[2016.04.03-22.33.47:244][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
-[2016.04.03-22.33.47:289][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
-[2016.04.03-22.33.47:289][  0]LogTargetPlatformManager:Display: Building Assets For Windows
-[2016.04.03-22.33.48:269][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
-[2016.04.03-22.33.48:591][  0]LogDerivedDataCache: Loaded boot cache 0.32s 46MB C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
-[2016.04.03-22.33.48:592][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
-[2016.04.03-22.33.48:592][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2016.04.03-22.33.48:592][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2016.04.03-22.33.48:592][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2016.04.03-22.33.48:592][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2016.04.03-22.33.48:610][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2016.04.03-22.33.48:622][  0]LogDerivedDataCache: Using Local data cache path C:/Users/owen/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2016.04.03-22.33.48:995][  0]LogInit: Selected Device Profile: [Windows]
-[2016.04.03-22.33.48:996][  0]LogContentStreaming: Texture pool size is 0.00 MB
-[2016.04.03-22.33.49:038][  0]LogMaterial: Uniform references updated for custom material expression Custom.
-[2016.04.03-22.33.49:250][  0]LogMeshUtilities: No automatic mesh reduction module available
-[2016.04.03-22.33.49:250][  0]LogMeshUtilities: No automatic mesh merging module available
-[2016.04.03-22.33.49:250][  0]LogMeshUtilities: No distributed automatic mesh merging module available
-[2016.04.03-22.33.49:672][  0]LogUObjectArray: 27672 objects as part of root set at end of initial load.
-[2016.04.03-22.33.49:672][  0]LogUObjectAllocator: 5589896 out of 0 bytes used by permanent object pool.
-[2016.04.03-22.33.49:672][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2016.04.03-22.33.49:718][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
-[2016.04.03-22.33.51:843][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.04.03-22.33.51:843][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2016.04.03-22.33.52:222][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.04.03-22.33.52:222][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.04.03-22.33.52:222][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.04.03-22.33.52:222][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.04.03-22.33.52:223][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
-[2016.04.03-22.33.52:223][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
-[2016.04.03-22.33.54:396][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2016.04.03-22.33.54:742][  0]LogAssetRegistry: FAssetRegistry took 0.0200 seconds to start up
-[2016.04.03-22.33.55:461][  0]SourceControl: Info Source control is disabled
-[2016.04.03-22.33.59:289][  0]LogEngine: Initializing Engine...
-[2016.04.03-22.33.59:335][  0]LogHMD: SteamVR failed to initialize.  Err: 110
-[2016.04.03-22.33.59:623][  0]LogAIModule: Creating AISystem for world NewWorld
-[2016.04.03-22.33.59:672][  0]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2016.04.03-22.33.59:902][  0]LogInit: FAudioDevice initialized.
-[2016.04.03-22.33.59:941][  0]LogDerivedDataCache: Saved boot cache 0.04s 46MB C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
-[2016.04.03-22.33.59:951][  0]LogInit: Texture streaming: Enabled
-[2016.04.03-22.34.00:185][  0]LogInit: Transaction tracking system initialized
-[2016.04.03-22.34.00:436][  0]BlueprintLog: New page: Editor Load
-[2016.04.03-22.34.01:639][  0]LocalizationService: Info Localization service is disabled
-[2016.04.03-22.34.02:347][  0]LogConsoleResponse:Display: 
-[2016.04.03-22.34.02:520][  0]LogCook:Display: Max memory allowance for cook 8192mb
-[2016.04.03-22.34.02:520][  0]LogCook:Display: Mobile HDR setting 1
-[2016.04.03-22.34.02:520][  0]LogCook:Display: Done creating registry. It took  0.00s.
-[2016.04.03-22.34.02:646][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/' took 0.02s
-[2016.04.03-22.34.03:666][  0]Cmd: MAP LOAD FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.04.03-22.34.03:666][  0]LogEditorServer:Warning: Can't find file '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
-[2016.04.03-22.34.03:666][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.04.03-22.34.03:734][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 67.947ms to complete.
-[2016.04.03-22.34.03:734][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.068
-[2016.04.03-22.34.03:915][  0]LogCollectionManager: Loaded 0 collections in 0.003505 seconds
-[2016.04.03-22.34.03:961][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Saved/Collections/' took 0.01s
-[2016.04.03-22.34.03:961][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/Developers/owen/Collections/' took 0.01s
-[2016.04.03-22.34.03:961][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/Collections/' took 0.01s
-[2016.04.03-22.34.03:961][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
-[2016.04.03-22.34.03:971][  0]LogContentBrowser: Native class hierarchy populated in 0.0098 seconds. Added 1978 classes and 343 folders.
-[2016.04.03-22.34.03:980][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2016.04.03-22.34.03:980][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2016.04.03-22.34.03:981][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0007 seconds. Added 12 classes and 0 folders.
-[2016.04.03-22.34.03:993][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2016.04.03-22.34.04:061][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.04.03-22.34.04:222][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0005 seconds. Added 0 classes and 0 folders.
-[2016.04.03-22.34.04:295][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.04.03-22.34.04:391][  0]LogCrashTracker: Crashtracker disabled due to settings.
-[2016.04.03-22.34.04:396][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
-[2016.04.03-22.34.04:474][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
-[2016.04.03-22.34.04:474][  0]LogLoad: Full Startup: 23.69 seconds (BP compile: 0.01 seconds)
-[2016.04.03-22.34.04:474][  0]LogExternalProfiler: Found external profiler: VSPerf
-[2016.04.03-22.34.04:474][  0]LogExternalProfiler: Using external profiler: VSPerf
-[2016.04.03-22.34.04:484][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
-[2016.04.03-22.34.04:542][  0]SourceControl: Info On branch master
-[2016.04.03-22.34.04:542][  0]SourceControl: Info Your branch is up-to-date with 'origin/master'.
-[2016.04.03-22.34.04:542][  0]SourceControl: Info Changes not staged for commit:
-[2016.04.03-22.34.04:542][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
-[2016.04.03-22.34.04:542][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Intermediate/CachedAssetRegistry.bin
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Saved/Autosaves/PackageRestoreData.json
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Saved/Config/Windows/Editor.ini
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
-[2016.04.03-22.34.04:542][  0]SourceControl: Info 	modified:   Saved/Logs/SpaceFPS.log
-[2016.04.03-22.34.04:542][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
-[2016.04.03-22.34.04:542][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2016.04.03-22.34.04:704][  0]LogRenderer: Reallocating scene render targets to support 1200x728 (Frame:2).
-[2016.04.03-22.34.04:924][  1]LogAssetRegistry: Asset discovery search completed in 10.2022 seconds
-[2016.04.03-22.34.04:925][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2016.04.03-22.34.04:925][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000029 seconds (updated 0 objects)
-[2016.04.03-22.34.12:134][836]LogAIModule: Creating AISystem for world AssetTestingField
-[2016.04.03-22.34.12:174][836]Cmd: MAP LOAD FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/Levels/AssetTestingField.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2016.04.03-22.34.12:174][836]LightingResults: New page: Lighting Build
-[2016.04.03-22.34.12:181][836]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0005 seconds. Added 5 classes and 0 folders.
-[2016.04.03-22.34.12:205][836]LoadErrors: New page: Loading map: AssetTestingField.umap
-[2016.04.03-22.34.12:206][836]MapCheck: New page: Map Check
-[2016.04.03-22.34.12:206][836]LightingResults: New page: Lighting Build
-[2016.04.03-22.34.12:258][836]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2016.04.03-22.34.12:289][836]Cmd: MAP CHECKDEP NOCLEARLOG
-[2016.04.03-22.34.12:369][836]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 79.661ms to complete.
-[2016.04.03-22.34.12:369][836]LogFileHelpers: Loading map 'AssetTestingField' took 0.197
-[2016.04.03-22.34.15:796][227]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crate_1Base)
-[2016.04.03-22.34.15:917][230]LogEditorViewport: Clicking on Component (LMB): StaticMeshComponent (StaticMeshComponent0)
-[2016.04.03-22.34.27:938][528]LogRenderer: Reallocating scene render targets to support 1424x912 (Frame:2014).
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/PhysMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/PhysMesh.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Enums/EFloatTypes.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Enums/EFloatTypes.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/MaterialFunctions/BoundingSphereBased_0-1_UVW.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/MaterialFunctions/BoundingSphereBased_0-1_UVW.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/MPC_R2T.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/MPC_R2T.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_2sidedLit.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_2sidedLit.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Flipbooks/M_FlipBookCounter_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Flipbooks/M_FlipBookCounter_01.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Imposters/M_ImposterTest_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Imposters/M_ImposterTest_01.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Meshes/ShadowTestMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Meshes/ShadowTestMesh.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/127grey.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/127grey.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/FlipbookMotionVectors/Position1.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/FlipbookMotionVectors/Position1.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BasicShapes/BasicShapeMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BasicShapes/BasicShapeMaterial.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BufferVisualization/AmbientOcclusion.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BufferVisualization/AmbientOcclusion.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Editor/Slate/Icons/AssetIcons/Cone_16x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Editor/Slate/Icons/AssetIcons/Cone_16x.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorBlueprintResources/ActorMacros.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorBlueprintResources/ActorMacros.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorKismetResources/StandardMacros.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorKismetResources/StandardMacros.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorLandscapeResources/AlphaBrushMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorLandscapeResources/AlphaBrushMaterial.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Anchor.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Anchor.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/TreeArrow_ExpandedRealtimePreview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/TreeArrow_ExpandedRealtimePreview.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Cascade/CASC_BackgroundCube_MAT.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Cascade/CASC_BackgroundCube_MAT.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Matinee/MAT_EnableTrack_Mat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Matinee/MAT_EnableTrack_Mat.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset' is outside repository
-[2016.04.03-22.37.30:376][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Thumbnails/FloorPlaneMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Thumbnails/FloorPlaneMaterial.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Utilities/ImageReflectionPreview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Utilities/ImageReflectionPreview.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/AnimTreeEd_PreviewFloor.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/AnimTreeEd_PreviewFloor.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/Cascade/BackgroundCube.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/Cascade/BackgroundCube.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/SkeletalMesh/DefaultSkeletalMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/SkeletalMesh/DefaultSkeletalMesh.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Ai_Spawnpoint.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Ai_Spawnpoint.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/S_Thruster.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/S_Thruster.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AI/S_NavLink.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AI/S_NavLink.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AudioIcons/S_Ambient_Sound_Moveable.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AudioIcons/S_Ambient_Sound_Moveable.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Crowd/T_Crowd_Spline.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Crowd/T_Crowd_Spline.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/LightIcons/Light_Point_Stationary_Statics.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/LightIcons/Light_Point_Stationary_Statics.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Spline/T_Loft_Spline.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Spline/T_Loft_Spline.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Materials/MI_ShapeInstance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Materials/MI_ShapeInstance.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Textures/T_ShapeDiffuse.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Textures/T_ShapeDiffuse.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/MI_BaseFlat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/MI_BaseFlat.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/ManualUVs/MI_BaseGrid_MUV.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/ManualUVs/MI_BaseGrid_MUV.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/SketchUp/MI_BaseGrid_WUV_SketchUp.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/SketchUp/MI_BaseGrid_WUV_SketchUp.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/WorldUVs/MI_BaseGrid_WUV.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/WorldUVs/MI_BaseGrid_WUV.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/GamePreview/EjectFromPlayer.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/GamePreview/EjectFromPlayer.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/Notifications/CompileFailed.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/Notifications/CompileFailed.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/BlackUnlitMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/BlackUnlitMaterial.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/LightingModels/M_TextureDefinedSpecularReflecti.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/LightingModels/M_TextureDefinedSpecularReflecti.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineFonts/Roboto.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineFonts/Roboto.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineLightProfiles/180Degree_IES.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineLightProfiles/180Degree_IES.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/RandomMirrorDisc.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/RandomMirrorDisc.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMeshes/BackgroundCube.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMeshes/BackgroundCube.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineProduction/ReferenceNormalMap.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineProduction/ReferenceNormalMap.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/AICON-Green.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/AICON-Green.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/Cursors/Arrow.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/Cursors/Arrow.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSky/BP_Sky_Shere.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSky/BP_Sky_Shere.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/ReverbSettings/Alley.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/ReverbSettings/Alley.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineTireTypes/DefaultTireType.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineTireTypes/DefaultTireType.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Materials/M_EV_FalloffSphere_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Materials/M_EV_FalloffSphere_Master_01.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Mesh/S_EV_FalloffSphere_Mesh_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Mesh/S_EV_FalloffSphere_Mesh_01.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Materials/M_EV_FogEnvironment_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Materials/M_EV_FogEnvironment_Master_01.uasset' is outside repository
-[2016.04.03-22.37.30:377][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Mesh/S_EV_FogEnvironment_01_Mesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Mesh/S_EV_FogEnvironment_01_Mesh.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/T_EV_Fogsheet_FlareColors_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/T_EV_Fogsheet_FlareColors_01.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Materials/M_EV_FogSheet_1sided_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Materials/M_EV_FogSheet_1sided_Master_01.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Mesh/MI_Fogsheet_HideClose.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Mesh/MI_Fogsheet_HideClose.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Mesh/S_EV_SimpleLightBeam_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Mesh/S_EV_SimpleLightBeam_01.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/MI_Shader_BaseTileEx.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/MI_Shader_BaseTileEx.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Instances/M_ES_Phong_Opaque_INST_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Instances/M_ES_Phong_Opaque_INST_01.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Textures/Bokeh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Textures/Bokeh.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/FunctionalTesting/Blueprints/AITesting_MoveGoal.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/FunctionalTesting/Blueprints/AITesting_MoveGoal.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Combiners/DistanceField_Intersection.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Combiners/DistanceField_Intersection.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Shapes/DistanceField_Capsule.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Shapes/DistanceField_Capsule.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/AlphaBlend/World_Aligned_Blend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/AlphaBlend/World_Aligned_Blend.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Coordinates/DrawLine-2D.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Coordinates/DrawLine-2D.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Debug/DebugBinaryValues-Float.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Debug/DebugBinaryValues-Float.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/BellCurve.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/BellCurve.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Lighting/PixelDepthOffset_Foliage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Lighting/PixelDepthOffset_Foliage.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Reflections/ReflectionVectorSoft.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Reflections/ReflectionVectorSoft.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/CalcLightsourceAngle.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/CalcLightsourceAngle.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/BakedDisplacement.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/BakedDisplacement.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Vectors/MF_RotateVector_90.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Vectors/MF_RotateVector_90.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Volumetrics/BeersLaw.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Volumetrics/BeersLaw.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/ConstantScalebyDistance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/ConstantScalebyDistance.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/3PointLevels.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/3PointLevels.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/3dParticleOpacityInstance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/3dParticleOpacityInstance.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/MacroUVs/MacroUVs.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/MacroUVs/MacroUVs.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/TextureBasedWPO/DemoBox.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/TextureBasedWPO/DemoBox.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Gradients/GradientMap_Multi.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Gradients/GradientMap_Multi.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/MAXScripts/MeshSequenceFlipbook_Script.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/MAXScripts/MeshSequenceFlipbook_Script.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Normals/RotateNormalWhileMasking.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Normals/RotateNormalWhileMasking.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/NotInUse/WorldAlignedNormals_HighQuality_optimizationAttempt.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/NotInUse/WorldAlignedNormals_HighQuality_optimizationAttempt.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter/PivotPainter_HierarchyData.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter/PivotPainter_HierarchyData.uasset' is outside repository
-[2016.04.03-22.37.30:378][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/3dParticleOpacity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/3dParticleOpacity.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/Append4.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/Append4.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AdjustNormalsToCompensateForRotateAboutAxisOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AdjustNormalsToCompensateForRotateAboutAxisOffset.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_ColorBurn.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_ColorBurn.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/ComplexMotion/Motion_4WayChaos.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/ComplexMotion/Motion_4WayChaos.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/CameraWorldBlend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/CameraWorldBlend.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/GetPostProcessFunctions/GetAmbientCubemapIntensity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/GetPostProcessFunctions/GetAmbientCubemapIntensity.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AddWorldPositionOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AddWorldPositionOffset.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Entry.umap: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Entry.umap' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Template_Default.umap: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Template_Default.umap' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Thumbnails/Default.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Thumbnails/Default.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Bokeh_5Sides.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Bokeh_5Sides.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/lut/LUT_Afternoon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/lut/LUT_Afternoon.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Materials/BasicAsset01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Materials/BasicAsset01.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Gradients/Gradient_Linear.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Gradients/Gradient_Linear.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/PerfTricks/MultiChannelMask.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/PerfTricks/MultiChannelMask.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Textures/T_multiMask.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Textures/T_multiMask.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/VertexAnimation/AdvancedFlag.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/VertexAnimation/AdvancedFlag.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/T_MobileControls_texture.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/T_MobileControls_texture.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/HUD/AnalogHat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/HUD/AnalogHat.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/StarterContent/Textures/T_ground_Moss_D.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/StarterContent/Textures/T_ground_Moss_D.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/TemplateResources/MI_Template_BaseBlue.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/TemplateResources/MI_Template_BaseBlue.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/ContentIntroCurve.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/ContentIntroCurve.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Audio/Audience.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Audio/Audience.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/ContentBrowserOverview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/ContentBrowserOverview.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/TutorialAssets/CameraActor_64x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/TutorialAssets/CameraActor_64x.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintFunctionLibrary_64x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintFunctionLibrary_64x.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Code/AddingCode.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Code/AddingCode.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/FoliageWalkThrough.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/FoliageWalkThrough.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Installation/InstallingVisualStudioTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Installation/InstallingVisualStudioTutorial.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/IWBE_Tutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/IWBE_Tutorial.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/CreatingSigningCertAndProvisionTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/CreatingSigningCertAndProvisionTutorial.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/TutorialAssets/android_Icon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/TutorialAssets/android_Icon.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset' is outside repository
-[2016.04.03-22.37.30:379][673]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/C
+[2016.04.04-09.51.15:250][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.04-09.51.15:250][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.04.04-09.51.15:259][  0]LogInit: Computer: OWEN
+[2016.04.04-09.51.15:259][  0]LogInit: User: owen
+[2016.04.04-09.51.15:259][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.04.04-09.51.15:259][  0]LogInit: High frequency timer resolution =3.923945 MHz
+[2016.04.04-09.51.15:259][  0]LogMemory: Memory total: Physical=32.0GB (32GB approx)
+[2016.04.04-09.51.15:259][  0]LogMemory: Platform Memory Stats for Windows
+[2016.04.04-09.51.15:259][  0]LogMemory: Process Physical Memory: 314.36 MB used, 314.36 MB peak
+[2016.04.04-09.51.15:259][  0]LogMemory: Process Virtual Memory: 316.71 MB used, 316.71 MB peak
+[2016.04.04-09.51.15:259][  0]LogMemory: Physical Memory: 7630.76 MB used, 32750.12 MB total
+[2016.04.04-09.51.15:259][  0]LogMemory: Virtual Memory: 621.02 MB used, 8388608.00 MB total
+[2016.04.04-09.51.15:348][  0]LogTextLocalizationManager: No specific translations for ('en-GB') exist, so ('en') translations will be used.
+[2016.04.04-09.51.15:809][  0]LogD3D11RHI: D3D11 adapters:
+[2016.04.04-09.51.15:822][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
+[2016.04.04-09.51.15:822][  0]LogD3D11RHI:       3051MB of dedicated video memory, 0MB of dedicated system memory, and 3840MB of shared system memory, 1 output[s]
+[2016.04.04-09.51.15:822][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.04.04-09.51.15:832][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.04.04-09.51.15:832][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
+[2016.04.04-09.51.15:832][  0]LogD3D11RHI:   Driver Version: Unknown (internal Unknown)
+[2016.04.04-09.51.15:832][  0]LogD3D11RHI:      Driver Date: Unknown
+[2016.04.04-09.51.15:832][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.04.04-09.51.15:842][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.04.04-09.51.15:855][  0]LogShaderCompilers: Guid format shader working directory is -9 characters bigger than the processId version (../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Intermediate/Shaders/WorkingDirectory/7996/).
+[2016.04.04-09.51.15:855][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/owen/AppData/Local/Temp/UnrealShaderWorkingDir/687A61B7433DF8297EC984B3912CF8CC/'.
+[2016.04.04-09.51.15:855][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.04.04-09.51.17:593][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.04.04-09.51.17:604][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.04.04-09.51.17:617][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.04.04-09.51.17:630][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.04.04-09.51.17:639][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.04.04-09.51.17:647][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.04.04-09.51.17:654][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.04.04-09.51.17:662][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.04.04-09.51.17:669][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.04.04-09.51.17:676][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.04.04-09.51.17:684][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.04.04-09.51.17:700][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.04.04-09.51.17:700][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.04.04-09.51.17:705][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.04.04-09.51.17:731][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.04.04-09.51.17:738][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.04.04-09.51.17:746][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.04.04-09.51.17:753][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.04.04-09.51.17:761][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.04.04-09.51.17:761][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.04.04-09.51.17:935][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache: Loaded boot cache 0.09s 46MB C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.04.04-09.51.18:022][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.04.04-09.51.18:040][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.04.04-09.51.18:051][  0]LogDerivedDataCache: Using Local data cache path C:/Users/owen/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.04.04-09.51.18:285][  0]LogInit: Selected Device Profile: [Windows]
+[2016.04.04-09.51.18:286][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.04.04-09.51.18:320][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2016.04.04-09.51.18:481][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.04.04-09.51.18:481][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.04.04-09.51.18:481][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.04.04-09.51.18:810][  0]LogUObjectArray: 27672 objects as part of root set at end of initial load.
+[2016.04.04-09.51.18:810][  0]LogUObjectAllocator: 5589904 out of 0 bytes used by permanent object pool.
+[2016.04.04-09.51.18:810][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.04.04-09.51.18:828][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.04.04-09.51.19:052][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.04-09.51.19:052][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.04.04-09.51.19:199][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.04-09.51.19:199][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.04-09.51.19:199][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.04-09.51.19:199][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.04-09.51.19:199][  0]LogStreaming:Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Common/Selection_16x.png' error.
+[2016.04.04-09.51.19:199][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Common/Selection_16x.png
+[2016.04.04-09.51.20:020][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.04.04-09.51.20:144][  0]LogAssetRegistry: FAssetRegistry took 0.0198 seconds to start up
+[2016.04.04-09.51.20:369][  0]SourceControl: Info Source control is disabled
+[2016.04.04-09.51.22:662][  0]LogEngine: Initializing Engine...
+[2016.04.04-09.51.22:668][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.04.04-09.51.22:841][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.04.04-09.51.22:866][  0]LogInit: XAudio2 using 'Headset Earphone (Razer Kraken 7.1 Chroma)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.04.04-09.51.22:880][  0]LogInit: FAudioDevice initialized.
+[2016.04.04-09.51.22:919][  0]LogDerivedDataCache: Saved boot cache 0.04s 46MB C:/Users/owen/AppData/Local/UnrealEngine/4.11/DerivedDataCache/Boot.ddc.
+[2016.04.04-09.51.22:930][  0]LogInit: Texture streaming: Enabled
+[2016.04.04-09.51.22:977][  0]LogInit: Transaction tracking system initialized
+[2016.04.04-09.51.23:032][  0]BlueprintLog: New page: Editor Load
+[2016.04.04-09.51.23:197][  0]LocalizationService: Info Localization service is disabled
+[2016.04.04-09.51.23:324][  0]LogConsoleResponse:Display: 
+[2016.04.04-09.51.23:449][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.04.04-09.51.23:449][  0]LogCook:Display: Mobile HDR setting 1
+[2016.04.04-09.51.23:449][  0]LogCook:Display: Done creating registry. It took  0.00s.
+[2016.04.04-09.51.24:206][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/' took 0.02s
+[2016.04.04-09.51.24:206][  0]Cmd: MAP LOAD FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.04-09.51.24:207][  0]LogEditorServer:Warning: Can't find file '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap'
+[2016.04.04-09.51.24:207][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.04-09.51.24:278][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 71.074ms to complete.
+[2016.04.04-09.51.24:278][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.072
+[2016.04.04-09.51.24:415][  0]LogCollectionManager: Loaded 0 collections in 0.002660 seconds
+[2016.04.04-09.51.24:462][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Saved/Collections/' took 0.01s
+[2016.04.04-09.51.24:462][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/Developers/owen/Collections/' took 0.01s
+[2016.04.04-09.51.24:462][  0]LogFileCache: Scanning file cache for directory 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/Collections/' took 0.01s
+[2016.04.04-09.51.24:462][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000004 seconds
+[2016.04.04-09.51.24:475][  0]LogContentBrowser: Native class hierarchy populated in 0.0124 seconds. Added 1978 classes and 343 folders.
+[2016.04.04-09.51.24:483][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.04.04-09.51.24:483][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.04.04-09.51.24:484][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.04.04-09.51.24:497][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2016.04.04-09.51.24:567][  0]LogContentBrowser: Native class hierarchy updated for 'SuperSearch' in 0.0006 seconds. Added 1 classes and 2 folders.
+[2016.04.04-09.51.24:693][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.04.04-09.51.24:768][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.04.04-09.51.24:833][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.04.04-09.51.24:837][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.04.04-09.51.24:865][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.04.04-09.51.24:866][  0]LogLoad: Full Startup: 10.72 seconds (BP compile: 0.00 seconds)
+[2016.04.04-09.51.24:866][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.04.04-09.51.24:866][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.04.04-09.51.24:875][  0]LogOcInput: Can't find Oculus library dev build: is proper Runtime installed? Version: 0.8.0.0
+[2016.04.04-09.51.24:933][  0]SourceControl: Info On branch master
+[2016.04.04-09.51.24:933][  0]SourceControl: Info Your branch is up-to-date with 'origin/master'.
+[2016.04.04-09.51.24:933][  0]SourceControl: Info Changes not staged for commit:
+[2016.04.04-09.51.24:933][  0]SourceControl: Info   (use "git add <file>..." to update what will be committed)
+[2016.04.04-09.51.24:933][  0]SourceControl: Info   (use "git checkout -- <file>..." to discard changes in working directory)
+[2016.04.04-09.51.24:933][  0]SourceControl: Info 	modified:   Saved/AutoScreenshot.png
+[2016.04.04-09.51.24:933][  0]SourceControl: Info 	modified:   Saved/Config/Windows/EditorPerProjectUserSettings.ini
+[2016.04.04-09.51.24:933][  0]SourceControl: Info 	modified:   Saved/Logs/SpaceFPS.log
+[2016.04.04-09.51.24:933][  0]SourceControl: Info no changes added to commit (use "git add" and/or "git commit -a")
+[2016.04.04-09.51.24:933][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.04.04-09.51.25:090][  0]LogRenderer: Reallocating scene render targets to support 1200x728 (Frame:2).
+[2016.04.04-09.51.25:307][  1]LogAssetRegistry: Asset discovery search completed in 5.1828 seconds
+[2016.04.04-09.51.25:307][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.04.04-09.51.25:307][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2016.04.04-09.52.07:181][103]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:/Unreal4SpaceBase/Level Props/Corridors/Corridor And Shutter.fbx)
+[2016.04.04-09.52.07:193][103]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.04.04-09.52.07:193][103]LogFbx: ItemName: NodeAttribute, ItemCount : 2
+[2016.04.04-09.52.07:193][103]LogFbx: ItemName: Geometry, ItemCount : 2
+[2016.04.04-09.52.07:193][103]LogFbx: ItemName: Model, ItemCount : 4
+[2016.04.04-09.52.07:193][103]LogFbx: ItemName: Material, ItemCount : 5
+[2016.04.04-09.52.07:200][103]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/Corridor And Shutter.fbx
+[2016.04.04-09.52.07:210][103]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.52.08:478][103]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/Corridor And Shutter.fbx
+[2016.04.04-09.52.08:488][103]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.52.08:491][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorFloor'
+[2016.04.04-09.52.08:491][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorFloor'
+[2016.04.04-09.52.08:496][103]LogMaterial: Missing cached shader map for material CorridorFloor, compiling. 
+[2016.04.04-09.52.08:524][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorBeams'
+[2016.04.04-09.52.08:524][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorBeams'
+[2016.04.04-09.52.08:533][103]LogMaterial: Missing cached shader map for material CorridorBeams, compiling. 
+[2016.04.04-09.52.08:547][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorWalls'
+[2016.04.04-09.52.08:547][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/CorridorWalls'
+[2016.04.04-09.52.08:560][103]LogMaterial: Missing cached shader map for material CorridorWalls, compiling. 
+[2016.04.04-09.52.08:574][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/Corridor_Roof'
+[2016.04.04-09.52.08:575][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/Corridor_Roof'
+[2016.04.04-09.52.08:593][103]LogMaterial: Missing cached shader map for material Corridor_Roof, compiling. 
+[2016.04.04-09.52.08:613][103]LogFbx:Warning: Triangulating static mesh Floor
+[2016.04.04-09.52.08:747][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/Door'
+[2016.04.04-09.52.08:747][103]LogLinker:Warning: Can't find file '/Game/BlenderAssets/Corridors/Door'
+[2016.04.04-09.52.08:753][103]LogMaterial: Missing cached shader map for material Door, compiling. 
+[2016.04.04-09.52.08:767][103]LogFbx:Warning: Triangulating static mesh Door
+[2016.04.04-09.52.08:836][103]LogStaticMesh: Building static mesh Corridor_And_Shutter...
+[2016.04.04-09.52.08:985][103]LogStaticMesh: Built static mesh [0.15s] /Game/BlenderAssets/Corridors/Corridor_And_Shutter.Corridor_And_Shutter
+[2016.04.04-09.52.09:000][103]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.04.04-09.52.09:979][103]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:/Unreal4SpaceBase/Level Props/Corridors/CorridorOnly.fbx)
+[2016.04.04-09.52.11:424][103]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/CorridorOnly.fbx
+[2016.04.04-09.52.11:433][103]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.52.11:436][103]LogFbx:Warning: Triangulating static mesh Floor
+[2016.04.04-09.52.11:563][103]LogStaticMesh: Building static mesh CorridorOnly...
+[2016.04.04-09.52.11:680][103]LogStaticMesh: Built static mesh [0.12s] /Game/BlenderAssets/Corridors/CorridorOnly.CorridorOnly
+[2016.04.04-09.52.11:688][103]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.04.04-09.52.12:046][103]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:/Unreal4SpaceBase/Level Props/Corridors/CorridorTSection.fbx)
+[2016.04.04-09.52.13:577][103]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/CorridorTSection.fbx
+[2016.04.04-09.52.13:592][103]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.52.13:596][103]LogFbx:Warning: Triangulating static mesh Floor.004
+[2016.04.04-09.52.13:724][103]LogFbx:Warning: Triangulating static mesh Floor.003
+[2016.04.04-09.52.13:847][103]LogFbx:Warning: Triangulating static mesh Floor.002
+[2016.04.04-09.52.13:966][103]LogFbx:Warning: Triangulating static mesh Floor.001
+[2016.04.04-09.52.14:082][103]LogFbx:Warning: Triangulating static mesh Plane
+[2016.04.04-09.52.14:112][103]LogFbx:Warning: Triangulating static mesh Floor
+[2016.04.04-09.52.14:233][103]LogFbx:Warning: Triangulating static mesh Door
+[2016.04.04-09.52.14:302][103]LogStaticMesh: Building static mesh CorridorTSection...
+[2016.04.04-09.52.14:354][103]LogStaticMesh: Built static mesh [0.05s] /Game/BlenderAssets/Corridors/CorridorTSection.CorridorTSection
+[2016.04.04-09.52.14:364][103]LogStaticMesh:Warning: CorridorTSection has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option.
+[2016.04.04-09.52.14:371][103]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.04.04-09.52.14:371][103]FBXImport:Warning: Warning CorridorTSection has degenerate tangent bases which will result in incorrect shading.  MikkTSpace relies on tangent bases and may result in mesh corruption, consider disabling this option. 
+[2016.04.04-09.52.36:868][422]LogAIModule: Creating AISystem for world AssetTestingField
+[2016.04.04-09.52.41:996][422]LogSavePackage: Save=11.35ms
+[2016.04.04-09.52.41:996][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Corridor_And_Shutter66FA6BEE4CDD2FAE5FABAB9A82F27D5E.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_And_Shutter.uasset'
+[2016.04.04-09.52.41:999][422]LogSavePackage: Total save time: 14.13ms
+[2016.04.04-09.52.41:999][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_And_Shutter.uasset
+[2016.04.04-09.52.42:404][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/Corridor_Roof" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset" SILENT=true
+[2016.04.04-09.52.42:417][422]LogSavePackage: Save=11.09ms
+[2016.04.04-09.52.42:417][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Corridor_Roof44C7E0224B0D8AD622E3428A0068043C.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset'
+[2016.04.04-09.52.42:420][422]LogSavePackage: Total save time: 13.88ms
+[2016.04.04-09.52.42:420][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset
+[2016.04.04-09.52.42:835][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorBeams" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset" SILENT=true
+[2016.04.04-09.52.42:852][422]LogSavePackage: Save=11.22ms
+[2016.04.04-09.52.42:852][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorBeamsEB0B059B48EE9BE9B0EFA18C5FBFF7BE.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset'
+[2016.04.04-09.52.42:854][422]LogSavePackage: Total save time: 13.96ms
+[2016.04.04-09.52.42:854][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset
+[2016.04.04-09.52.43:255][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorFloor" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset" SILENT=true
+[2016.04.04-09.52.43:268][422]LogSavePackage: Save=11.03ms
+[2016.04.04-09.52.43:268][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorFloor37E4B4604C58B59E78B78A82E44C2B2F.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset'
+[2016.04.04-09.52.43:270][422]LogSavePackage: Total save time: 13.84ms
+[2016.04.04-09.52.43:270][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset
+[2016.04.04-09.52.43:671][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorOnly" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset" SILENT=true
+[2016.04.04-09.52.43:684][422]LogSavePackage: Save=11.95ms
+[2016.04.04-09.52.43:684][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorOnly05BE8B08447A9DCFBA2BA195632E3974.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset'
+[2016.04.04-09.52.43:687][422]LogSavePackage: Total save time: 14.67ms
+[2016.04.04-09.52.43:687][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset
+[2016.04.04-09.52.44:105][422]LogSavePackage: Save=11.11ms
+[2016.04.04-09.52.44:105][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorTSectionC745B2B14DF8B9CAA0082C9557D14B31.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset'
+[2016.04.04-09.52.44:107][422]LogSavePackage: Total save time: 13.87ms
+[2016.04.04-09.52.44:107][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset
+[2016.04.04-09.52.44:508][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorWalls" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset" SILENT=true
+[2016.04.04-09.52.44:521][422]LogSavePackage: Save=11.00ms
+[2016.04.04-09.52.44:521][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorWalls1157575F43BB683E46F653BFFE9DF754.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset'
+[2016.04.04-09.52.44:524][422]LogSavePackage: Total save time: 14.03ms
+[2016.04.04-09.52.44:524][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset
+[2016.04.04-09.52.44:926][422]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/Door" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset" SILENT=true
+[2016.04.04-09.52.44:938][422]LogSavePackage: Save=11.19ms
+[2016.04.04-09.52.44:938][422]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/DoorB285D9D742D6F5FCC41BFFA9A9EDCDCC.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset'
+[2016.04.04-09.52.44:941][422]LogSavePackage: Total save time: 13.77ms
+[2016.04.04-09.52.44:941][422]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset
+[2016.04.04-09.52.45:307][422]Cmd: MAP LOAD FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/Levels/AssetTestingField.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.04.04-09.52.45:307][422]LightingResults: New page: Lighting Build
+[2016.04.04-09.52.45:314][422]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0005 seconds. Added 5 classes and 0 folders.
+[2016.04.04-09.52.45:339][422]LoadErrors: New page: Loading map: AssetTestingField.umap
+[2016.04.04-09.52.45:339][422]MapCheck: New page: Map Check
+[2016.04.04-09.52.45:340][422]LightingResults: New page: Lighting Build
+[2016.04.04-09.52.45:397][422]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.04.04-09.52.45:429][422]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.04.04-09.52.45:511][422]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 82.402ms to complete.
+[2016.04.04-09.52.45:512][422]LogFileHelpers: Loading map 'AssetTestingField' took 0.207
+[2016.04.04-09.52.58:216][486]LogActorFactory: Actor Factory created Corridor_And_Shutter
+[2016.04.04-09.53.03:360][101]LogActorFactory: Actor Factory created Corridor_And_Shutter
+[2016.04.04-09.53.11:025][949]LogRenderer: Reallocating scene render targets to support 1424x912 (Frame:8407).
+[2016.04.04-09.53.20:243][628]LogSavePackage: Save=11.45ms
+[2016.04.04-09.53.20:243][628]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Corridor_And_ShutterC36A73EE47234908DBA0B585F0A7EA9C.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_And_Shutter.uasset'
+[2016.04.04-09.53.20:246][628]LogSavePackage: Total save time: 28.01ms
+[2016.04.04-09.53.20:246][628]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_And_Shutter.uasset
+[2016.04.04-09.53.29:800][378]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorOnly" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset" SILENT=true
+[2016.04.04-09.53.29:818][378]LogSavePackage: Save=10.95ms
+[2016.04.04-09.53.29:818][378]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorOnly100FF3174FE1393ABA96C9A22029ED20.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset'
+[2016.04.04-09.53.29:821][378]LogSavePackage: Total save time: 20.09ms
+[2016.04.04-09.53.29:821][378]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorOnly.uasset
+[2016.04.04-09.53.41:566][210]LogSavePackage: Save=10.82ms
+[2016.04.04-09.53.41:566][210]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorTSectionF839974444058DE14FF62C954C2E6C69.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset'
+[2016.04.04-09.53.41:569][210]LogSavePackage: Total save time: 20.28ms
+[2016.04.04-09.53.41:569][210]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset
+[2016.04.04-09.53.52:701][173]LogActorFactory: Actor Factory created CorridorOnly
+[2016.04.04-09.53.55:085][443]LogActorFactory: Actor Factory created CorridorOnly
+[2016.04.04-09.54.07:437][899]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.04.04-09.54.22:599][672]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Corridor_And_Shutter)
+[2016.04.04-09.54.23:373][758]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Corridor_And_Shutter)
+[2016.04.04-09.54.23:973][827]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Cube)
+[2016.04.04-09.54.31:237][523]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorOnly)
+[2016.04.04-09.54.32:312][646]Cmd: EDIT COPY
+[2016.04.04-09.54.32:664][688]Cmd: EDIT PASTE
+[2016.04.04-09.54.42:166][758]LogActorFactory: Actor Factory created CorridorTSection
+[2016.04.04-09.54.46:020][206]LogActorFactory: Actor Factory created CorridorTSection
+[2016.04.04-09.54.58:116][619]LogSavePackage: Save=29.76ms
+[2016.04.04-09.54.58:116][619]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/UEDPCAssetTestingField2C6019964D885A763252949802444CE3.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap'
+[2016.04.04-09.54.58:118][619]LogSavePackage: Total save time: 38.37ms
+[2016.04.04-09.54.58:118][619]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap
+[2016.04.04-09.55.29:691][829]LogEditorViewport: Clicking on Actor (LMB): LightmassImportanceVolume (LightmassImportanceVolume)
+[2016.04.04-09.55.30:456][916]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight)
+[2016.04.04-09.55.32:083][106]Cmd: EDIT COPY
+[2016.04.04-09.55.32:343][137]Cmd: EDIT PASTE
+[2016.04.04-09.55.38:294][833]Cmd: EDIT COPY
+[2016.04.04-09.55.38:597][869]Cmd: EDIT PASTE
+[2016.04.04-09.56.14:892][106]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Capital_Ship_Test)
+[2016.04.04-09.56.15:555][180]Cmd: DELETE
+[2016.04.04-09.56.15:555][180]Cmd: ACTOR DELETE
+[2016.04.04-09.56.15:556][180]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.04.04-09.56.15:570][180]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2016.04.04-09.56.19:416][638]MapCheck: New page: Map Check
+[2016.04.04-09.56.19:441][638]LightingResults: New page: Lighting Build - 4 Apr 2016 10:56:19
+[2016.04.04-09.56.19:537][638]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.04.04-09.56.19:854][638]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.04.04-09.56.19:881][638]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.04.04-09.56.21:175][638]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.04.04-09.56.21:175][638]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7996
+[2016.04.04-09.56.23:798][638]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.04.04-09.56.23:798][638]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.04.04-09.56.23:798][638]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.04.04-09.56.23:798][638]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.04.04-09.56.23:798][638]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.04.04-09.56.24:054][638]LogEditorBuildUtils: Build time 0:00:04
+[2016.04.04-09.56.24:061][638]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorFloor, compiling. 
+[2016.04.04-09.56.24:066][638]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorFloor, compiling. 
+[2016.04.04-09.56.24:081][639]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorBeams, compiling. 
+[2016.04.04-09.56.24:087][639]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorBeams, compiling. 
+[2016.04.04-09.56.24:103][640]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorWalls, compiling. 
+[2016.04.04-09.56.24:110][640]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer CorridorWalls, compiling. 
+[2016.04.04-09.56.24:130][641]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Corridor_Roof, compiling. 
+[2016.04.04-09.56.24:139][641]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Corridor_Roof, compiling. 
+[2016.04.04-09.56.24:155][642]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Door, compiling. 
+[2016.04.04-09.56.24:163][642]LogMaterial: Missing cached shader map for material FLightmassMaterialRenderer Door, compiling. 
+[2016.04.04-09.56.30:165][893]LightingResults:Error: Error Corridor_And_Shutter Object has overlapping UVs.
+[2016.04.04-09.56.30:165][893]LightingResults: Info Corridor_And_Shutter Lightmap UV are overlapping by 8.9%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-09.56.30:206][898]LightingResults:Error: Error Crate_1Base Object has overlapping UVs.
+[2016.04.04-09.56.30:206][898]LightingResults: Info Crate_1Base Lightmap UV are overlapping by 7.0%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-09.56.30:319][912]Job is a success!
+[2016.04.04-09.56.30:374][913]LogMaterial:Warning: Material /Game/BlenderAssets/Corridors/CorridorFloor.CorridorFloor needed to have new flag set bUsedWithStaticLighting !
+[2016.04.04-09.56.30:376][913]LogMaterial: Missing cached shader map for material CorridorFloor, compiling. 
+[2016.04.04-09.56.30:397][913]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.04-09.56.30:397][913]LogMaterial:Warning: Material /Game/BlenderAssets/Corridors/CorridorBeams.CorridorBeams needed to have new flag set bUsedWithStaticLighting !
+[2016.04.04-09.56.30:399][913]LogMaterial: Missing cached shader map for material CorridorBeams, compiling. 
+[2016.04.04-09.56.30:412][913]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.04-09.56.30:412][913]LogMaterial:Warning: Material /Game/BlenderAssets/Corridors/CorridorWalls.CorridorWalls needed to have new flag set bUsedWithStaticLighting !
+[2016.04.04-09.56.30:415][913]LogMaterial: Missing cached shader map for material CorridorWalls, compiling. 
+[2016.04.04-09.56.30:428][913]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.04-09.56.30:428][913]LogMaterial:Warning: Material /Game/BlenderAssets/Corridors/Corridor_Roof.Corridor_Roof needed to have new flag set bUsedWithStaticLighting !
+[2016.04.04-09.56.30:431][913]LogMaterial: Missing cached shader map for material Corridor_Roof, compiling. 
+[2016.04.04-09.56.30:447][913]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.04-09.56.30:447][913]LogMaterial:Warning: Material /Game/BlenderAssets/Corridors/Door.Door needed to have new flag set bUsedWithStaticLighting !
+[2016.04.04-09.56.30:450][913]LogMaterial: Missing cached shader map for material Door, compiling. 
+[2016.04.04-09.56.30:463][913]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.04.04-09.56.30:567][913]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.04.04-09.56.30:567][913]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.04.04-09.56.30:567][913]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (BGRA8)
+[2016.04.04-09.56.30:965][913]Lightmass on OWEN: 1.77 sec total, 144 ms importing, 51 ms setup, 263 ms photons, 992 ms processing, 0 ms extra exporting [9/9 mappings]. Threads: 6.55 sec total, 1.57 sec processing.
+[2016.04.04-09.56.30:992][913]LogStaticLightingSystem: Illumination: 11.5 sec (76 ms encoding lightmaps, 19 ms encoding shadowmaps)
+[2016.04.04-09.56.30:992][913]LogStaticLightingSystem: Lightmap texture memory:  0.1 MB (0.1 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.04.04-09.56.30:992][913]LogStaticLightingSystem: Shadowmap texture memory: 0.2 MB (0.2 MB streaming, 0.0 MB non-streaming), 1 textures
+[2016.04.04-09.56.31:826][914]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.04.04-09.56.31:826][914]MapCheck: New page: AssetTestingField - 4 Apr 2016 10:56:31
+[2016.04.04-09.56.31:949][914]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 122.705ms to complete.
+[2016.04.04-09.56.41:960][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/Corridor_Roof" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset" SILENT=true
+[2016.04.04-09.56.41:977][665]LogSavePackage: Save=2.57ms
+[2016.04.04-09.56.41:977][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Corridor_Roof75B38DBC4F62AFE3C2A1F6981BB80624.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset'
+[2016.04.04-09.56.41:979][665]LogSavePackage: Total save time: 17.79ms
+[2016.04.04-09.56.41:980][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Corridor_Roof.uasset
+[2016.04.04-09.56.41:984][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorBeams" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset" SILENT=true
+[2016.04.04-09.56.41:994][665]LogSavePackage: Save=2.20ms
+[2016.04.04-09.56.41:994][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorBeamsB4716E854C87B3B2EEA0AA8D161A4DA1.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset'
+[2016.04.04-09.56.41:997][665]LogSavePackage: Total save time: 11.54ms
+[2016.04.04-09.56.41:997][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorBeams.uasset
+[2016.04.04-09.56.42:001][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorFloor" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset" SILENT=true
+[2016.04.04-09.56.42:012][665]LogSavePackage: Save=2.26ms
+[2016.04.04-09.56.42:012][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorFloorC8E3D49E44445272BE5682A40EA6B6F2.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset'
+[2016.04.04-09.56.42:014][665]LogSavePackage: Total save time: 12.15ms
+[2016.04.04-09.56.42:014][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorFloor.uasset
+[2016.04.04-09.56.42:019][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/CorridorWalls" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset" SILENT=true
+[2016.04.04-09.56.42:030][665]LogSavePackage: Save=2.39ms
+[2016.04.04-09.56.42:030][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorWalls03B61C5A4344814228432299867F413D.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset'
+[2016.04.04-09.56.42:033][665]LogSavePackage: Total save time: 12.31ms
+[2016.04.04-09.56.42:033][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorWalls.uasset
+[2016.04.04-09.56.42:037][665]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BlenderAssets/Corridors/Door" FILE="../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset" SILENT=true
+[2016.04.04-09.56.42:048][665]LogSavePackage: Save=2.20ms
+[2016.04.04-09.56.42:048][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Door6DDB56CB45208BC44FF0AF9E684151D7.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset'
+[2016.04.04-09.56.42:051][665]LogSavePackage: Total save time: 12.34ms
+[2016.04.04-09.56.42:051][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/Door.uasset
+[2016.04.04-09.56.42:178][665]LogSavePackage: Save=77.42ms
+[2016.04.04-09.56.42:178][665]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/UEDPCAssetTestingField73FBF297408A83284B058B9B2B428877.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap'
+[2016.04.04-09.56.42:180][665]LogSavePackage: Total save time: 85.64ms
+[2016.04.04-09.56.42:180][665]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap
+[2016.04.04-09.57.09:490][438]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorTSection)
+[2016.04.04-09.57.10:440][544]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorTSection)
+[2016.04.04-09.57.12:720][815]Cmd: DELETE
+[2016.04.04-09.57.12:720][815]Cmd: ACTOR DELETE
+[2016.04.04-09.57.12:721][815]LogEditorActor: Deleted Actor: StaticMeshActor
+[2016.04.04-09.57.12:735][815]LogEditorActor: Deleted 1 Actors (0.015 secs)
+[2016.04.04-09.57.17:567][ 15]SourceControl:Error: Error error: pathspec 'C:/Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset' did not match any file(s) known to git.
+[2016.04.04-09.57.59:266][389]LogFactory: FactoryCreateBinary: StaticMesh with FbxFactory (0 0 D:/Unreal4SpaceBase/Level Props/Corridors/CorridorTSection.fbx)
+[2016.04.04-09.57.59:271][389]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.04.04-09.57.59:271][389]LogFbx: ItemName: Geometry, ItemCount : 1
+[2016.04.04-09.57.59:271][389]LogFbx: ItemName: Model, ItemCount : 1
+[2016.04.04-09.57.59:271][389]LogFbx: ItemName: Material, ItemCount : 4
+[2016.04.04-09.57.59:278][389]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/CorridorTSection.fbx
+[2016.04.04-09.57.59:286][389]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.58.00:657][389]LogFbx: Loading FBX Scene from D:/Unreal4SpaceBase/Level Props/Corridors/CorridorTSection.fbx
+[2016.04.04-09.58.00:666][389]LogFbx: FBX Scene Loaded Succesfully
+[2016.04.04-09.58.00:669][389]LogFbx:Warning: Triangulating static mesh Floor.004
+[2016.04.04-09.58.00:773][389]LogStaticMesh: Building static mesh CorridorTSection...
+[2016.04.04-09.58.00:853][389]LogStaticMesh: Built static mesh [0.09s] /Game/BlenderAssets/Corridors/CorridorTSection.CorridorTSection
+[2016.04.04-09.58.00:858][389]FBXImport:Warning: Warning Warning: No smoothing group information was found in this FBX scene.  Please make sure to enable the 'Export Smoothing Groups' option in the FBX Exporter plug-in before exporting the file.  Even for tools that don't support smoothing groups, the FBX Exporter will generate appropriate smoothing data at export-time so that correct vertex normals can be inferred while importing. 
+[2016.04.04-09.58.05:106][888]LogEditorViewport: Clicking Background
+[2016.04.04-09.58.05:774][967]LogEditorViewport: Clicking Background
+[2016.04.04-09.58.08:450][233]LogActorFactory: Actor Factory created CorridorTSection
+[2016.04.04-09.58.10:404][466]LogActorFactory: Actor Factory created CorridorTSection
+[2016.04.04-09.58.11:351][578]LogActorFactory: Actor Factory created CorridorTSection
+[2016.04.04-09.58.37:021][568]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight4)
+[2016.04.04-09.58.45:854][593]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorTSection)
+[2016.04.04-09.59.00:151][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorOnly2)
+[2016.04.04-09.59.01:773][425]Cmd: EDIT COPY
+[2016.04.04-09.59.02:100][464]Cmd: EDIT PASTE
+[2016.04.04-09.59.27:605][484]Cmd: EDIT COPY
+[2016.04.04-09.59.27:933][523]Cmd: EDIT PASTE
+[2016.04.04-09.59.45:152][565]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2016.04.04-09.59.51:127][251]MapCheck: New page: Map Check
+[2016.04.04-09.59.51:154][251]Cmd: MAP REBUILD ALLVISIBLE
+[2016.04.04-09.59.51:154][251]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2016.04.04-09.59.51:209][251]LightingResults: New page: Lighting Build - 4 Apr 2016 10:59:51
+[2016.04.04-09.59.51:217][251]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.04.04-09.59.51:219][251]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.04.04-09.59.51:219][251]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.04.04-09.59.51:220][251]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.04.04-09.59.51:220][251]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7996
+[2016.04.04-09.59.55:732][251]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.04.04-09.59.55:732][251]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.04.04-09.59.55:732][251]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.04.04-09.59.55:733][251]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.04.04-09.59.55:733][251]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.04.04-09.59.55:805][251]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2016.04.04-09.59.55:805][251]MapCheck: New page: AssetTestingField - 4 Apr 2016 10:59:55
+[2016.04.04-09.59.55:805][251]MapCheck:Error: Error WorldSettings Maps need lighting rebuilt 
+[2016.04.04-09.59.55:885][251]MapCheck: Info Map check complete: 1 Error(s), 0 Warning(s), took 80.102ms to complete.
+[2016.04.04-09.59.55:905][251]LogEditorBuildUtils: Build time 0:00:04
+[2016.04.04-09.59.58:452][394]LightingResults:Error: Error Corridor_And_Shutter Object has overlapping UVs.
+[2016.04.04-09.59.58:452][394]LightingResults: Info Corridor_And_Shutter Lightmap UV are overlapping by 8.9%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-09.59.58:475][396]LightingResults:Error: Error Crate_1Base Object has overlapping UVs.
+[2016.04.04-09.59.58:488][397]LightingResults: Info Crate_1Base Lightmap UV are overlapping by 7.0%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-09.59.58:623][409]Job is a success!
+[2016.04.04-09.59.58:864][410]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.04.04-09.59.58:864][410]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.04.04-09.59.58:864][410]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (BGRA8)
+[2016.04.04-09.59.58:884][410]Lightmass on OWEN: 1.30 sec total, 132 ms importing, 50 ms setup, 267 ms photons, 819 ms processing, 0 ms extra exporting [11/11 mappings]. Threads: 5.55 sec total, 2.29 sec processing.
+[2016.04.04-09.59.58:937][410]LogStaticLightingSystem: Illumination: 7.68 sec (113 ms encoding lightmaps, 58 ms encoding shadowmaps)
+[2016.04.04-09.59.58:937][410]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.04.04-09.59.58:937][410]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 1 textures
+[2016.04.04-09.59.59:758][411]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.04.04-09.59.59:759][411]MapCheck: New page: AssetTestingField - 4 Apr 2016 10:59:59
+[2016.04.04-09.59.59:850][411]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 91.311ms to complete.
+[2016.04.04-10.00.14:720][834]LogSavePackage: Save=10.73ms
+[2016.04.04-10.00.14:720][834]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorTSectionF7F2DA37434C9B0FA1EB7882F18AB908.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset'
+[2016.04.04-10.00.14:723][834]LogSavePackage: Total save time: 13.56ms
+[2016.04.04-10.00.14:723][834]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset
+[2016.04.04-10.00.15:222][834]LogSavePackage: Save=100.91ms
+[2016.04.04-10.00.15:222][834]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/UEDPCAssetTestingField378635E0434E3BEA5BA389AB099957E5.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap'
+[2016.04.04-10.00.15:223][834]LogSavePackage: Total save time: 116.26ms
+[2016.04.04-10.00.15:223][834]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap
+[2016.04.04-10.00.51:711][461]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight)
+[2016.04.04-10.00.57:784][871]LogSavePackage: Save=10.56ms
+[2016.04.04-10.00.57:784][871]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/CorridorTSectionE5759355423018124EE36A9EFB1AF0BF.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset'
+[2016.04.04-10.00.57:787][871]LogSavePackage: Total save time: 27.43ms
+[2016.04.04-10.00.57:787][871]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/BlenderAssets/Corridors/CorridorTSection.uasset
+[2016.04.04-10.01.11:043][397]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorOnly3)
+[2016.04.04-10.01.37:270][513]Cmd: MODE GRID=0
+[2016.04.04-10.02.02:097][471]Cmd: MODE GRID=1
+[2016.04.04-10.02.21:134][720]LogEditorViewport: Clicking Background
+[2016.04.04-10.02.28:807][627]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorOnly4)
+[2016.04.04-10.02.45:268][588]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorTSection)
+[2016.04.04-10.02.45:931][662]LogEditorViewport: Clicking Background
+[2016.04.04-10.02.46:855][771]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorOnly4)
+[2016.04.04-10.03.07:725][264]LogEditorViewport: Clicking Background
+[2016.04.04-10.03.20:612][757]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2016.04.04-10.03.32:130][ 97]LogSavePackage: Save=94.15ms
+[2016.04.04-10.03.32:130][ 97]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/UEDPCAssetTestingField19C96F0440DC4F0D3A7E83ACC1910D16.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap'
+[2016.04.04-10.03.32:131][ 97]LogSavePackage: Total save time: 108.77ms
+[2016.04.04-10.03.32:131][ 97]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap
+[2016.04.04-10.04.03:458][551]LogSavePackage: Save=100.64ms
+[2016.04.04-10.04.03:458][551]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/AssetTestingField_Auto12489509D4A8AAEB7A5CF12BBB6B59326.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/AssetTestingField_Auto1.umap'
+[2016.04.04-10.04.03:460][551]LogSavePackage: Total save time: 115.02ms
+[2016.04.04-10.04.03:460][551]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/AssetTestingField_Auto1.umap
+[2016.04.04-10.04.03:462][551]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Levels/AssetTestingField' took 0.135
+[2016.04.04-10.04.03:462][551]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.135
+[2016.04.04-10.04.26:887][629]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CorridorTSection)
+[2016.04.04-10.04.27:779][729]LogEditorViewport: Clicking on Actor (LMB): PointLight (PointLight4)
+[2016.04.04-10.04.32:684][306]Cmd: EDIT COPY
+[2016.04.04-10.04.33:303][380]Cmd: EDIT PASTE
+[2016.04.04-10.04.46:247][897]MapCheck: New page: Map Check
+[2016.04.04-10.04.46:266][897]LightingResults: New page: Lighting Build - 4 Apr 2016 11:04:46
+[2016.04.04-10.04.46:274][897]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.04.04-10.04.46:276][897]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.04.04-10.04.46:276][897]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.04.04-10.04.46:277][897]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.04.04-10.04.46:277][897]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7996
+[2016.04.04-10.04.50:781][897]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.04.04-10.04.50:781][897]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.04.04-10.04.50:781][897]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.04.04-10.04.50:781][897]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.04.04-10.04.50:781][897]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.04.04-10.04.50:871][897]LogEditorBuildUtils: Build time 0:00:04
+[2016.04.04-10.04.52:860][  9]LogSavePackage: Save=115.54ms
+[2016.04.04-10.04.52:860][  9]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/UEDPCAssetTestingFieldD4E3F448438E78CBEDD9339A28959C3D.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap'
+[2016.04.04-10.04.52:861][  9]LogSavePackage: Total save time: 123.80ms
+[2016.04.04-10.04.52:861][  9]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/Autosaves/Game/Levels/UEDPCAssetTestingField.umap
+[2016.04.04-10.04.54:943][222]LightingResults:Error: Error Crate_1Base Object has overlapping UVs.
+[2016.04.04-10.04.54:943][222]LightingResults: Info Crate_1Base Lightmap UV are overlapping by 7.0%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-10.04.55:382][271]LightingResults:Error: Error Corridor_And_Shutter Object has overlapping UVs.
+[2016.04.04-10.04.55:382][271]LightingResults: Info Corridor_And_Shutter Lightmap UV are overlapping by 8.9%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-10.04.56:234][366]Job is a success!
+[2016.04.04-10.04.56:462][367]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2016.04.04-10.04.56:462][367]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2016.04.04-10.04.56:462][367]LogTexture:Display: Building textures: ShadowMapTexture2D_2 (BGRA8)
+[2016.04.04-10.04.56:492][367]Lightmass on OWEN: 4.01 sec total, 128 ms importing, 47 ms setup, 282 ms photons, 3.53 sec processing, 0 ms extra exporting [11/11 mappings]. Threads: 24.5 sec total, 13.5 sec processing.
+[2016.04.04-10.04.56:549][367]LogStaticLightingSystem: Illumination: 10.2 sec (114 ms encoding lightmaps, 58 ms encoding shadowmaps)
+[2016.04.04-10.04.56:549][367]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.04.04-10.04.56:549][367]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 1 textures
+[2016.04.04-10.04.56:797][368]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.04.04-10.04.56:797][368]MapCheck: New page: AssetTestingField - 4 Apr 2016 11:04:56
+[2016.04.04-10.04.56:881][368]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 84.28ms to complete.
+[2016.04.04-10.06.00:429][885]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Crate_1Base)
+[2016.04.04-10.06.10:210][ 43]MapCheck: New page: Map Check
+[2016.04.04-10.06.10:231][ 43]LightingResults: New page: Lighting Build - 4 Apr 2016 11:06:10
+[2016.04.04-10.06.10:239][ 43]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2016.04.04-10.06.10:241][ 43]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2016.04.04-10.06.10:241][ 43]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2016.04.04-10.06.10:242][ 43]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2016.04.04-10.06.10:242][ 43]LogSwarmInterface: [TryOpenConnection] Local Process ID is 7996
+[2016.04.04-10.06.14:748][ 43]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2016.04.04-10.06.14:748][ 43]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2016.04.04-10.06.14:748][ 43]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2016.04.04-10.06.14:748][ 43]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2016.04.04-10.06.14:748][ 43]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2016.04.04-10.06.14:835][ 43]LogEditorBuildUtils: Build time 0:00:04
+[2016.04.04-10.06.18:759][410]LightingResults:Error: Error Crate_1Base Object has overlapping UVs.
+[2016.04.04-10.06.18:759][410]LightingResults: Info Crate_1Base Lightmap UV are overlapping by 7.0%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-10.06.19:261][470]LightingResults:Error: Error Corridor_And_Shutter Object has overlapping UVs.
+[2016.04.04-10.06.19:261][470]LightingResults: Info Corridor_And_Shutter Lightmap UV are overlapping by 8.9%. Please adjust content - Enable Error Coloring to visualize.
+[2016.04.04-10.06.19:976][556]Job is a success!
+[2016.04.04-10.06.20:208][557]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.04.04-10.06.20:208][557]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.04.04-10.06.20:208][557]LogTexture:Display: Building textures: ShadowMapTexture2D_3 (BGRA8)
+[2016.04.04-10.06.20:223][557]Lightmass on OWEN: 3.77 sec total, 134 ms importing, 49 ms setup, 295 ms photons, 3.26 sec processing, 0 ms extra exporting [11/11 mappings]. Threads: 22.5 sec total, 12.3 sec processing.
+[2016.04.04-10.06.20:281][557]LogStaticLightingSystem: Illumination: 10.0 sec (111 ms encoding lightmaps, 59 ms encoding shadowmaps)
+[2016.04.04-10.06.20:282][557]LogStaticLightingSystem: Lightmap texture memory:  0.5 MB (0.5 MB streaming, 0.0 MB non-streaming), 2 textures
+[2016.04.04-10.06.20:282][557]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 1 textures
+[2016.04.04-10.06.20:762][558]Cmd: MAP CHECK NOTIFYRESULTS
+[2016.04.04-10.06.20:762][558]MapCheck: New page: AssetTestingField - 4 Apr 2016 11:06:20
+[2016.04.04-10.06.20:844][558]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 81.462ms to complete.
+[2016.04.04-10.06.42:124][998]LogSavePackage: Save=134.12ms
+[2016.04.04-10.06.42:124][998]LogSavePackage: Moving '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Saved/AssetTestingField2CA075A14BA652FECE3811BF173AAA3B.tmp' to '../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/Levels/AssetTestingField.umap'
+[2016.04.04-10.06.42:127][998]LogSavePackage: Total save time: 150.20ms
+[2016.04.04-10.06.42:127][998]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/owen/Documents/GitHub/SpaceFPS/Content/Levels/AssetTestingField.umap
+[2016.04.04-10.06.42:156][998]LogFileHelpers: Saving map 'AssetTestingField' took 0.274
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/PhysMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Blueprints/PhysMesh.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Enums/EFloatTypes.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Enums/EFloatTypes.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Macros/RenderToTextureFunctionLibrary.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/MaterialFunctions/BoundingSphereBased_0-1_UVW.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/MaterialFunctions/BoundingSphereBased_0-1_UVW.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/MPC_R2T.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/MPC_R2T.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_2sidedLit.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Debug/M_2sidedLit.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Flipbooks/M_FlipBookCounter_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Flipbooks/M_FlipBookCounter_01.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Imposters/M_ImposterTest_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Materials/Imposters/M_ImposterTest_01.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Meshes/ShadowTestMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Meshes/ShadowTestMesh.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/127grey.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/127grey.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/FlipbookMotionVectors/Position1.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/ArtTools/RenderToTexture/Textures/FlipbookMotionVectors/Position1.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BasicShapes/BasicShapeMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BasicShapes/BasicShapeMaterial.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BufferVisualization/AmbientOcclusion.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/BufferVisualization/AmbientOcclusion.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Editor/Slate/Icons/AssetIcons/Cone_16x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Editor/Slate/Icons/AssetIcons/Cone_16x.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorBlueprintResources/ActorMacros.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorBlueprintResources/ActorMacros.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorKismetResources/StandardMacros.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorKismetResources/StandardMacros.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorLandscapeResources/AlphaBrushMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorLandscapeResources/AlphaBrushMaterial.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Anchor.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Anchor.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/TreeArrow_ExpandedRealtimePreview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/TreeArrow_ExpandedRealtimePreview.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Cascade/CASC_BackgroundCube_MAT.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Cascade/CASC_BackgroundCube_MAT.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Matinee/MAT_EnableTrack_Mat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Matinee/MAT_EnableTrack_Mat.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/MatineeGroups/MAT_ColorTrack.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/ParticleSystems/PSysThumbnail_NoImage.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Thumbnails/FloorPlaneMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Thumbnails/FloorPlaneMaterial.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Utilities/ImageReflectionPreview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMaterials/Utilities/ImageReflectionPreview.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/AnimTreeEd_PreviewFloor.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/AnimTreeEd_PreviewFloor.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/Cascade/BackgroundCube.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/Cascade/BackgroundCube.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/ColorCalibrator/M_ChromeBall.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/SkeletalMesh/DefaultSkeletalMesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorMeshes/SkeletalMesh/DefaultSkeletalMesh.uasset' is outside repository
+[2016.04.04-10.07.18:435][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Ai_Spawnpoint.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Ai_Spawnpoint.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/S_Thruster.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/S_Thruster.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AI/S_NavLink.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AI/S_NavLink.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AudioIcons/S_Ambient_Sound_Moveable.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/AudioIcons/S_Ambient_Sound_Moveable.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Crowd/T_Crowd_Spline.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Crowd/T_Crowd_Spline.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/LightIcons/Light_Point_Stationary_Statics.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/LightIcons/Light_Point_Stationary_Statics.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Spline/T_Loft_Spline.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorResources/Spline/T_Loft_Spline.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Materials/MI_ShapeInstance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Materials/MI_ShapeInstance.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Textures/T_ShapeDiffuse.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShapes/Textures/T_ShapeDiffuse.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/MI_BaseFlat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/MI_BaseFlat.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/ManualUVs/MI_BaseGrid_MUV.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/ManualUVs/MI_BaseGrid_MUV.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/SketchUp/MI_BaseGrid_WUV_SketchUp.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/SketchUp/MI_BaseGrid_WUV_SketchUp.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/WorldUVs/MI_BaseGrid_WUV.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorShellMaterials/WorldUVs/MI_BaseGrid_WUV.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/GamePreview/EjectFromPlayer.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/GamePreview/EjectFromPlayer.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/Notifications/CompileFailed.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EditorSounds/Notifications/CompileFailed.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDamageTypes/DmgTypeBP_Environmental.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/BlackUnlitMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/BlackUnlitMaterial.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/LightingModels/M_TextureDefinedSpecularReflecti.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineDebugMaterials/LightingModels/M_TextureDefinedSpecularReflecti.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineFonts/Roboto.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineFonts/Roboto.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineLightProfiles/180Degree_IES.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineLightProfiles/180Degree_IES.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/AntiAliasedTextMaterialTranslucent.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/RandomMirrorDisc.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMaterials/RandomMirrorDisc.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMeshes/BackgroundCube.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineMeshes/BackgroundCube.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineProduction/ReferenceNormalMap.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineProduction/ReferenceNormalMap.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/AICON-Green.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/AICON-Green.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/Cursors/Arrow.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineResources/Cursors/Arrow.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSky/BP_Sky_Shere.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSky/BP_Sky_Shere.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/Duck_Normal_Attack_MixMod.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/ReverbSettings/Alley.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineSounds/ReverbSettings/Alley.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineTireTypes/DefaultTireType.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineTireTypes/DefaultTireType.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Materials/M_EV_FalloffSphere_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Materials/M_EV_FalloffSphere_Master_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Mesh/S_EV_FalloffSphere_Mesh_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FalloffSphere/Mesh/S_EV_FalloffSphere_Mesh_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Materials/M_EV_FogEnvironment_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Materials/M_EV_FogEnvironment_Master_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Mesh/S_EV_FogEnvironment_01_Mesh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/FogEnvironment/Mesh/S_EV_FogEnvironment_01_Mesh.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/T_EV_Fogsheet_FlareColors_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/T_EV_Fogsheet_FlareColors_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Materials/M_EV_FogSheet_1sided_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Materials/M_EV_FogSheet_1sided_Master_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Mesh/MI_Fogsheet_HideClose.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/Fogsheet/Mesh/MI_Fogsheet_HideClose.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Materials/M_EV_Lightbeam_Master_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Mesh/S_EV_SimpleLightBeam_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/EngineVolumetrics/LightBeam/Mesh/S_EV_SimpleLightBeam_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/MI_Shader_BaseTileEx.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/MI_Shader_BaseTileEx.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Instances/M_ES_Phong_Opaque_INST_01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Instances/M_ES_Phong_Opaque_INST_01.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Textures/Bokeh.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Engine_MI_Shaders/Textures/Bokeh.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/FunctionalTesting/Blueprints/AITesting_MoveGoal.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/FunctionalTesting/Blueprints/AITesting_MoveGoal.uasset' is outside repository
+[2016.04.04-10.07.18:436][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Combiners/DistanceField_Intersection.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Combiners/DistanceField_Intersection.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Shapes/DistanceField_Capsule.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/DistanceFields/Shapes/DistanceField_Capsule.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/AlphaBlend/World_Aligned_Blend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/AlphaBlend/World_Aligned_Blend.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Coordinates/DrawLine-2D.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Coordinates/DrawLine-2D.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Debug/DebugBinaryValues-Float.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Debug/DebugBinaryValues-Float.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/BellCurve.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/BellCurve.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/3ColorBlend.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Lighting/PixelDepthOffset_Foliage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Lighting/PixelDepthOffset_Foliage.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Opacity/AlphaOffset.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Reflections/ReflectionVectorSoft.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Reflections/ReflectionVectorSoft.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/CalcLightsourceAngle.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Shading/CalcLightsourceAngle.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/SpeedTree/SpeedTreeColorVariation.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/BakedDisplacement.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/BakedDisplacement.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Vectors/MF_RotateVector_90.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Vectors/MF_RotateVector_90.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Volumetrics/BeersLaw.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/Volumetrics/BeersLaw.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/ConstantScalebyDistance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/ConstantScalebyDistance.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/3PointLevels.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/3PointLevels.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/3dParticleOpacityInstance.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/3dParticleOpacityInstance.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/MacroUVs/MacroUVs.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/MacroUVs/MacroUVs.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/TextureBasedWPO/DemoBox.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/TextureBasedWPO/DemoBox.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/ExampleContent/Textures/DebugNumberPeriod.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Gradients/GradientMap_Multi.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Gradients/GradientMap_Multi.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Math/AddComponents.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/MAXScripts/MeshSequenceFlipbook_Script.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/MAXScripts/MeshSequenceFlipbook_Script.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Normals/RotateNormalWhileMasking.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Normals/RotateNormalWhileMasking.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/NotInUse/WorldAlignedNormals_HighQuality_optimizationAttempt.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/NotInUse/WorldAlignedNormals_HighQuality_optimizationAttempt.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter/PivotPainter_HierarchyData.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/PivotPainter/PivotPainter_HierarchyData.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/3dParticleOpacity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/3dParticleOpacity.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/Append4.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/Utility/Append4.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/UVs/BoundingBoxBased_0-1_UVW.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AdjustNormalsToCompensateForRotateAboutAxisOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions02/WorldPositionOffset/AdjustNormalsToCompensateForRotateAboutAxisOffset.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_ColorBurn.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Blends/Blend_ColorBurn.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/ComplexMotion/Motion_4WayChaos.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/ComplexMotion/Motion_4WayChaos.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Particles/Distance_Blend.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Procedurals/ComputeFilterWidth.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/CameraWorldBlend.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/Engine_MaterialFunctions03/Texturing/CameraWorldBlend.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/GetPostProcessFunctions/GetAmbientCubemapIntensity.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/GetPostProcessFunctions/GetAmbientCubemapIntensity.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AddWorldPositionOffset.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Functions/MaterialLayerFunctions/MatLayerBlend_AddWorldPositionOffset.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Entry.umap: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Entry.umap' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Template_Default.umap: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Template_Default.umap' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Thumbnails/Default.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Maps/Templates/Thumbnails/Default.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Bokeh_5Sides.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Bokeh_5Sides.uasset' is outside repository
+[2016.04.04-10.07.18:437][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/lut/LUT_Afternoon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/lut/LUT_Afternoon.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Materials/BasicAsset01.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Materials/BasicAsset01.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MapTemplates/Sky/DaylightAmbientCubemap.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Gradients/Gradient_Linear.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Gradients/Gradient_Linear.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/PerfTricks/MultiChannelMask.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/PerfTricks/MultiChannelMask.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Textures/T_multiMask.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/Textures/T_multiMask.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/VertexAnimation/AdvancedFlag.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MaterialTemplates/VertexAnimation/AdvancedFlag.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/T_MobileControls_texture.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/T_MobileControls_texture.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/HUD/AnalogHat.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/MobileResources/HUD/AnalogHat.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/StarterContent/Textures/T_ground_Moss_D.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/StarterContent/Textures/T_ground_Moss_D.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/TemplateResources/MI_Template_BaseBlue.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/TemplateResources/MI_Template_BaseBlue.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/ContentIntroCurve.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/ContentIntroCurve.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Audio/Audience.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Audio/Audience.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/ContentBrowserOverview.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/ContentBrowserOverview.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/TutorialAssets/CameraActor_64x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Basics/TutorialAssets/CameraActor_64x.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/BlueprintEditorTutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintFunctionLibrary_64x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/BlueprintTutorials/TutorialAssets/BlueprintFunctionLibrary_64x.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Code/AddingCode.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Code/AddingCode.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/FoliageWalkThrough.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/FoliageWalkThrough.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Foliage/TutorialAssets/Foliage.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Installation/InstallingVisualStudioTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Installation/InstallingVisualStudioTutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/IWBE_Tutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/IWBE_Tutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/InWorldBlueprintEditing/TutorialAssets/IWBE_Blutility.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/LandscapeWalkThrough.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Landscape/TutorialAssets/Landscape.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/CreatingSigningCertAndProvisionTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/CreatingSigningCertAndProvisionTutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/TutorialAssets/android_Icon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Mobile/TutorialAssets/android_Icon.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/FlipbookEditorTutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/Paper2D/TutorialAssets/Paper2DFlipbook_TutorialIcon.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/DestructibleMeshEditorTutorial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/DestructibleMeshEditorTutorial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/TutorialAssets/icon_Editor_Preferences_General_40x.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/Tutorial/SubEditors/TutorialAssets/Character/NewBlendSpace1D.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Plugins/2D/Paper2D/Content/DefaultLitSpriteMaterial.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Plugins/2D/Paper2D/Content/DefaultLitSpriteMaterial.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Plugins/2D/Paper2D/Content/PlaceholderTextures/DummySpriteTexture.uasset' is outside repository
+[2016.04.04-10.07.18:438][132]SourceControl: Info fatal: C:/Program Files (x86)/Epic Games/4.11/Engine/Content/: 'C:/Program Files (x86)/Epic Games/4.11/Engine/Content/' is outside repository
+[2016.04.04-10.08.15:213][132]LogSourceControl: FGitCheckInWorker: commit successful
+[2016.04.04-10.08.15:553][132]SourceControl: Info [master 08203a9] First Implementation Of modular Corridors(1)
+[2016.04.04-10.08.15:553][132]SourceControl: Info  9 files changed, 0 insertions(+), 0 deletions(-)
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/CorridorBeams.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/CorridorFloor.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/CorridorOnly.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/CorridorTSection.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/CorridorWalls.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/Corridor_And_Shutter.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/Corridor_Roof.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  create mode 100644 Content/BlenderAssets/Corridors/Door.uasset
+[2016.04.04-10.08.15:553][132]SourceControl: Info  rewrite Content/Levels/AssetTestingField.umap (83%)
+[2016.04.04-10.08.15:560][132]SourceControl: Info Commited [master 08203a9] First Implementation Of modular Corridors(1).
+[2016.04.04-10.08.54:488][ 29]Cmd: QUIT_EDITOR
+[2016.04.04-10.08.54:612][ 29]LogExit: Preparing to exit.
+[2016.04.04-10.08.55:216][ 29]LogExit: Editor shut down
+[2016.04.04-10.08.55:216][ 29]LogExit: Transaction tracking system shut down
+[2016.04.04-10.08.55:345][ 29]LogObj: Freed 0b from 0 cluster array pools.
+[2016.04.04-10.08.55:345][ 29]LogExit: Object subsystem successfully closed.
+[2016.04.04-10.08.55:362][ 29]LogD3D11RHI: Shutdown
+[2016.04.04-10.08.55:362][ 29]LogD3D11RHI: CleanupD3DDevice
+[2016.04.04-10.08.55:417][ 29]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.04.04-10.08.55:501][ 29]LogDerivedDataCache: Shutdown
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (204)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module StatsViewer (203)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (202)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module CrashTracker (201)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module SceneOutliner (200)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module SuperSearch (199)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module WidgetCarousel (198)
+[2016.04.04-10.08.55:501][ 29]LogModuleManager: Shutting down and abandoning module AddContentDialog (197)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module GameplayTags (196)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module EditorWidgets (195)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module CollectionManager (194)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module FoliageEdit (193)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module LandscapeEditor (192)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module ActorPickerMode (191)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module GeometryMode (190)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module TextureAlignMode (189)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module BspMode (188)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module PlacementMode (187)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module AutomationWorker (186)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module CharacterAI (185)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module SmartSnapping (184)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module ViewportSnapping (183)
+[2016.04.04-10.08.55:503][ 29]LogModuleManager: Shutting down and abandoning module LogVisualizer (182)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (181)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module IntroTutorials (180)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (179)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (178)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (177)
+[2016.04.04-10.08.55:504][ 29]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (176)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (175)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (174)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (173)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module MergeActors (172)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module SizeMap (171)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module TreeMap (170)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module ReferenceViewer (169)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module LocalizationService (168)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (167)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module HardwareTargeting (166)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (165)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module UndoHistory (164)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module UserFeedback (163)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module XmlParser (162)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module Blutility (161)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (160)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (159)
+[2016.04.04-10.08.56:354][ 29]LogModuleManager: Shutting down and abandoning module InputBindingEditor (158)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (157)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module SettingsEditor (156)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module ProjectLauncher (155)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module SessionFrontend (154)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module ProfilerClient (153)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (152)
+[2016.04.04-10.08.56:355][ 29]LogModuleManager: Shutting down and abandoning module DeviceManager (151)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module AutomationController (150)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module AutomationWindow (149)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Layers (148)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (147)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module DetailCustomizations (146)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module PackagesDialog (145)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Persona (144)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Kismet (143)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module GraphEditor (142)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module ClassViewer (141)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Toolbox (140)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module ModuleUI (139)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module MovieSceneTools (138)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module OutputLog (137)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module GammaUI (136)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Documentation (135)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (134)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module AnalyticsET (133)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module Analytics (132)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module PortalServices (131)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module PortalRpc (130)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module MessagingRpc (129)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module AITestSuite (128)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module GameplayDebugger (127)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module AIModule (126)
+[2016.04.04-10.08.56:395][ 29]LogModuleManager: Shutting down and abandoning module ProfilerService (125)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module TaskGraph (124)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SlateRemote (123)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SteamVRController (122)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SteamVR (121)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (120)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module OculusLibrary (119)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module OculusInput (118)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (117)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module CableComponent (116)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (115)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (114)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module HTML5Networking (113)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (112)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module PluginBrowser (111)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module EpicSurvey (110)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module DesktopPlatform (109)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (108)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module UObjectPlugin (107)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (106)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (105)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module SourceControl (104)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module GitSourceControl (103)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (102)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (101)
+[2016.04.04-10.08.56:480][ 29]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (100)
+[2016.04.04-10.08.56:481][ 29]LogModuleManager: Shutting down and abandoning module MeshPaint (99)
+[2016.04.04-10.08.56:481][ 29]LogModuleManager: Shutting down and abandoning module HotReload (98)
+[2016.04.04-10.08.56:481][ 29]LogModuleManager: Shutting down and abandoning module MainFrame (97)
+[2016.04.04-10.08.56:481][ 29]LogModuleManager: Shutting down and abandoning module LevelEditor (96)
+[2016.04.04-10.08.56:482][ 29]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (95)
+[2016.04.04-10.08.56:483][ 29]LogModuleManager: Shutting down and abandoning module AssetRegistry (94)
+[2016.04.04-10.08.56:680][ 29]LogModuleManager: Shutting down and abandoning module ContentBrowser (93)
+[2016.04.04-10.08.56:680][ 29]LogModuleManager: Shutting down and abandoning module Paper2DEditor (92)
+[2016.04.04-10.08.56:681][ 29]LogModuleManager: Shutting down and abandoning module UdpMessaging (91)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (90)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module Paper2D (89)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (88)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module Media (87)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module WmfMedia (86)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (85)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (84)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (83)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (82)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module PropertyEditor (81)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (80)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module FunctionalTesting (79)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (78)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.04.04-10.08.56:781][ 29]LogModuleManager: Shutting down and abandoning module Sequencer (75)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module AssetTools (74)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module UMGEditor (73)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module UMG (72)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module SlateReflector (71)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module Slate (70)
+[2016.04.04-10.08.56:782][ 29]LogModuleManager: Shutting down and abandoning module EditorStyle (69)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module SessionServices (68)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (67)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module XAudio2 (65)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module Networking (63)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module Core (62)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module CookingStats (58)
+[2016.04.04-10.08.56:785][ 29]LogModuleManager: Shutting down and abandoning module DerivedDataCache (57)
+[2016.04.04-10.08.56:785][ 29]LogDerivedDataCache: Shutdown
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.04.04-10.08.56:786][ 29]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.04.04-10.08.57:786][ 29]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.04.04-10.08.57:788][ 29]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.04.04-10.08.57:790][ 29]LogExit: Exiting.
+[2016.04.04-10.08.57:806][ 29]Log file closed, 04/04/16 11:08:57
